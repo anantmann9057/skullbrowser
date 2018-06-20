@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jatun.browser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/mytheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".google"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_google"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".youtube"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_youtube"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".web"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_web"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".web2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_web2"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.anant.jatun.browser.web3"
+            android:label="@string/title_activity_web3"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.anant.jatun.browser.Downloads"
+            android:label="@string/title_activity_downloads"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

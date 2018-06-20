@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jatun.browser.google"
+    tools:showIn="@layout/activity_google">
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded4"
+        android:ems="10"
+        android:hint="Enter Url"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:theme="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:theme="@style/Animation.AppCompat.Dialog"
+            android:layout_height="wrap_content" />
+
+    </WebView>
+</RelativeLayout>
